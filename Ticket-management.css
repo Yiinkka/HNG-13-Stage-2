@@ -91,6 +91,7 @@ nav {
 .header-and-new-ticket a{
     text-decoration: none;
     color: white;
+    width: max-content;
     font-size: 0.875rem;
     font-weight: 600;
     background-color: #2563eb;
@@ -110,6 +111,14 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+@media screen and (max-width: 816px) {
+    .tickets-cont {
+        flex-wrap: wrap;
+    }
+    .tickets {
+        flex: 1;
+    }
 }
 .tickets {
     /* border: 1px solid red; */
@@ -133,6 +142,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 .ticket-type-and-status h2 {
     font-size: 1.125rem;
@@ -141,7 +151,6 @@ nav {
     font-size: 12px;
     background-color: #f3f4f6;
     padding: 5px 10px;
-    width: max-content;
     border-radius: 10px;
     font-weight: 600;
 }
