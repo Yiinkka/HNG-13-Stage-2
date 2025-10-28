@@ -18,6 +18,11 @@ nav {
     align-items: center;
     position: relative;
 }
+@media screen and (max-width: 700px) {
+    nav {
+        padding: 5px;
+    }
+}
 .navbar {
     /* border: 1px solid yellow; */
     width: 100%;
@@ -248,7 +253,6 @@ footer {
 footer p {
     font-size: 14px;
     color: rgb(100 116 139);
-    width: max-content;
 }
 .privacy-policy-and-terms-of-services { 
     display: flex;
