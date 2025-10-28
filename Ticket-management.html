@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ticket-management.css">
+    <script src="https://kit.fontawesome.com/b2e4911e1b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-items-cont">
+            <div class="company">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" style="width: 25px;">
+                <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="rgb(37 99 235)"></path>
+                </svg>
+                <h2>Issue Tracker</h2>
+            </div>
+
+            <div class="profile">
+                <a href=""><i class="fa-regular fa-bell"></i></a>
+                <a href=""><i class="fa-regular fa-circle-question"></i></a>
+                <img src="images/lady.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="support-tickets">
+            <div class="support-tickets-items-cont">
+                <div class="header-and-new-ticket">
+                    <h2>Support Tickets</h2>
+                    <a href="Dashboard.html"><span>+</span> Add New Ticket</a>
+                </div>
+
+                <div class="tickets-cont">
+                    <div class="tickets">
+                        <div>
+                            <div class="ticket-type-and-status">
+                                <h2>UI bug in the reporting dashboard</h2>
+                                <small id="open">Open</small>
+                            </div>
+                            <p class="ticket-description">
+                                The date picker component is overlapping 
+                                with the main chart on resolutions below 1280px. 
+                                It makes it impossible to select a date range 
+                                on smaller laptop screens.
+                            </p>
+                        </div> 
+                        <div class="ticket-editing-cont">
+                            <p>
+                                Updated 2 hours ago
+                            </p>
+                            <div class="editing-and-delete-cont">
+                                <a href="" id="edit"><i class="fa-solid fa-pencil"></i></a>
+                                <a href="" id="delete"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tickets">
+                        <div>
+                            <div class="ticket-type-and-status">
+                                <h2>API connection timing out</h2>
+                                <small id="in-progress">In Progress</small>
+                            </div>
+                            <p class="ticket-description">
+                                The external analytics API is 
+                                frequently returning a 504 Gateway 
+                                Timeout error. This started happening 
+                                after the last server maintenance. 
+                                Need to investigate logs.
+                            </p>
+                        </div> 
+                        <div class="ticket-editing-cont">
+                            <p>
+                                Updated 1 day ago
+                            </p>
+                            <div class="editing-and-delete-cont">
+                                <a href="" id="edit"><i class="fa-solid fa-pencil"></i></i></a>
+                                <a href="" id="delete"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tickets"> 
+                        <div>
+                            <div class="ticket-type-and-status">
+                                <h2>Onboarding document typos</h2>
+                                <small id="closed">Closed</small>
+                            </div>
+                            <p class="ticket-description">
+                                Found several grammatical errors 
+                                and typos in the new user onboarding guide PDF. 
+                                Attached a document with corrections.
+                            </p>
+                        </div>
+                        <div class="ticket-editing-cont">
+                            <p>
+                                Updated 2 hours ago
+                            </p>
+                            <div class="editing-and-delete-cont">
+                                <a href="" id="edit"><i class="fa-solid fa-pencil"></i></a>
+                                <a href="" id="delete"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="success-and-error-message">
+            <div class="success-and-error-message-cont">
+                <div class="successs-message ">
+                    <p><span><i class="fa-regular fa-circle-check"></i></span>Ticket created successfully.</p>
+                </div>
+                <div class="error-message">
+                    <p><span><i class="fa-solid fa-exclamation"></i></span>An error occurred. Please try again.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

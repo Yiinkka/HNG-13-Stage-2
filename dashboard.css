@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f6f7f8;
+    letter-spacing: -0.015em;
+}
+nav {
+    background-color: white;
+    padding: 7px 20px;
+    border-bottom: 1px solid #e2e8f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items-cont {
+    /* border: 1px solid red; */
+    padding: 5px;
+    flex-basis: 1210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.comapny {
+    /* border: 1px solid red; */
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    color: #404752;
+}
+.comapny span img {
+    width: 33px;
+    border-radius: 90%;
+}
+.menue {
+    width: max-content;
+    display: flex;
+    gap: 30px;
+}
+.menue a {
+    font-size: 0.895rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4b5563;
+    transition: all 0.2s ease;
+}
+.menue a:hover {
+    color: #2c95f1;
+}
+.profile {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile a {
+    text-decoration: none;
+    font-size: 0.895rem;
+    color: white;
+    background-color: #2c95f1;
+    padding: 13px 17px;
+    border-radius: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.profile a:hover {
+    background-color: #46a4f6;
+    cursor: pointer;
+}
+.profile img {
+    width: 40px;
+}
+.harm-burger-menue {
+    display: none;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Overview {
+    /* border: 1px solid red; */
+    padding: 20px 0;
+    flex-basis: 1210px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Overview h1 {
+    font-size: 1.875rem;
+}
+.tickets-cont {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (max-width: 748px) {
+    .menue, .profile {
+        display: none;
+    }
+    .harm-burger-menue {
+        display: block;
+    }
+    .tickets-cont {
+        flex-wrap: wrap;
+    }
+    .tickets {
+        flex: 1;
+    }
+    
+}
+.tickets {
+    /* border: 1px solid red; */
+    padding: 25px;
+    flex-basis: 390px;
+    min-width: 200px;
+    height: 130px;
+    border: 2px solid #f0efef;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+.tickets:hover {
+    box-shadow: 1px 9px 12px 0px #e5e5e5;
+}
+.tickets div {
+    font-weight: 600;
+    color: #5a5a5a;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.tickets div h4 {
+    width: 129px;
+}
+.tickets img {
+    width: 23px;
+}
+.tickets p {
+    font-size: 1.875rem;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+}
+.manage-tickets a {
+    text-decoration: none;
+    background-color: #1e88e5;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 11px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    border-radius: 10px;
+    box-shadow: 1px 9px 12px 0px #e5e5e5;
+}
+.manage-tickets a:hover {
+    background-color: #1d83dc;
+}
+.manage-tickets a span img {
+    width: 20px;
+}

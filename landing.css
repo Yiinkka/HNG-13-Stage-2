@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f6f7f8;
+}
+nav {
+    /* border: 1px solid red; */
+    padding: 5px 120px;
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbar {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+.login-and-get-started {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+.login-and-get-started a {
+    width: max-content;
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    background-color: #137fec;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+#get-started:hover {
+    background-color: rgb(19 127 236 / 0.9);}
+#login {
+    background-color: transparent;
+    padding: 13px 23px;
+}
+#login:hover {
+    background-color: rgb(255 255 255 / 0.1);
+}
+nav header {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav header div {
+    width: 664px;
+    min-width: 280px;
+    /* border: 1px solid red; */
+}
+nav header h1{
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 900;
+    word-spacing: -10px;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 1;
+}
+nav header p {
+    color: #c2ccd8;
+    text-align: center;
+    font-size: 1.25rem;
+    word-spacing: 3px;
+    margin-top: 15px;
+}
+#wavy {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+}
+main {
+    padding: 5px 50px;
+}
+.features, .how-it-works, .team-compliments {
+    /* border: 1px solid red ; */
+    padding: 100px 0px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+.features header, .how-it-works header, .team-compliments header {
+    /* border: 1px solid violet; */
+    text-align: center;
+    max-width: 759px;
+    min-width: 100px;
+}
+.features header h1, .how-it-works header h1, .team-compliments header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    word-spacing: -4px;
+    letter-spacing: -3px;
+    color: rgb(15 23 42);
+}
+.features header p, .how-it-works header p, .team-compliments header p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #3e3e3e;
+}
+
+.features-card-container, .how-it-works-card-container {
+    /* border: 1px solid yellow; */
+    padding: 5px;
+    display: flex;
+    gap: 25px;
+}
+@media screen and (max-width: 980px){
+    .features-card-container, .how-it-works-card-container, .team-compliments-card-container {
+        flex-wrap: wrap;
+    }
+    .features-cards,.how-it-works-cards, .team-compliments-card {
+        flex: 1;
+    }
+}
+.features-cards {
+    border: 2px solid #f0efef;
+    background-color: white;
+    border-radius: 10px;
+    flex-basis: 343px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transition: all 0.2s ease-in-out;
+}
+.features-cards:hover, .team-compliments-card:hover {
+    box-shadow: 1px 9px 12px 0px #e5e5e5;
+}
+.features-cards img {
+    width: 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.features-cards h3 {
+    font-size: 18px;
+    margin-top: 9px;
+}
+.features-cards p, .how-it-works-cards p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+    color: rgb(100 116 139);
+}
+.how-it-works-card-container {
+    border-top: 1px solid #d7d7d7;
+    padding: 30px 0;
+}
+.how-it-works-cards {
+    flex-basis: 327px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.how-it-works-cards p {
+    text-align: center;
+}
+.how-it-works-cards span {
+    background-color: #137fec;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 100%;
+    color: white;
+    font-weight: 600;
+}
+.team-compliments-card-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.team-compliments-card {
+    border: 2px solid #f0efef;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    flex-basis: 533px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.team-compliments-card p {
+    font-size: 1.05rem;
+    color: rgb(71 85 105 );
+    line-height: 1.5rem;
+}
+.teammates {
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.teammates figure {
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.teammates figure img {
+    width: 100%;
+}
+.name-and-position p {
+    color: rgb(100 116 139);
+    font-size: 0.875rem;
+}
+footer {
+    padding: 37px 195px;
+    background-color: rgb(241 245 249);
+    border-top: 1px solid rgb(226 232 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+footer p {
+    font-size: 14px;
+    color: rgb(100 116 139);
+    width: max-content;
+}
+.privacy-policy-and-terms-of-services { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.privacy-policy-and-terms-of-services a {
+    text-decoration: none;
+    color: rgb(100 116 139);
+    width: max-content;
+}
+.privacy-policy-and-terms-of-services a:hover {
+    color: black;
+}
+@media screen and (max-width: 772px){
+    footer {
+        justify-content: center;
+        padding: 50px;
+    }
+}
